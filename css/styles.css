@@ -282,6 +282,83 @@ article img {
 }
 
 
+/*---------------------Newsletter-----------------------*/
+
+.newsletter {
+    background-image: url(../images/newsletter.png);
+    background-position: 65% 65%;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+}
+
+.newsletter-container {
+    flex-direction: column;
+    align-items: center;
+    z-index: 10000;
+}
+
+.newsletter-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.newsletter::before {
+    position: absolute;
+    content: "";
+    background-color: #040e27;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.newsletter-text h4 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.newsletter-text p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #aab1b7;
+}
+
+.mail-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.mail-form input {
+    width: 40vw;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.newsletter-btn {
+    background-color: #ff4a52;
+    color: #ffffff;
+    padding: 16px 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
 /*-------Media Queries-------------------------------------------*/
 
 @media (min-width: 576px) {
@@ -331,6 +408,18 @@ article img {
     .search-form {
         flex-direction: row;
         justify-content: center;
+    }
+    .newsletter-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .mail-form {
+        /* flex-direction: row; */
+        display: block;
+    }
+    .newsletter-text {
+        margin-top: 0;
+        margin-right: 20px;
     }
 }
 
