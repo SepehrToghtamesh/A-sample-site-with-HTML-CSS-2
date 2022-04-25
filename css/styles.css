@@ -359,6 +359,67 @@ article img {
 }
 
 
+/*-----------------Video---------------------------------*/
+
+.video {
+    background-image: url(../images/video.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    width: 100%;
+    padding: 130px 0;
+    margin: 15px 0;
+    position: relative;
+}
+
+.video::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #040e27;
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.video-container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.video-container h3 {
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-size: 7vw;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.video-btn {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #1ec6b6;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.video-btn a {
+    color: #ffffff;
+}
+
+.video-btn:hover {
+    background-color: #ff4a52;
+}
+
+
 /*-------Media Queries-------------------------------------------*/
 
 @media (min-width: 576px) {
